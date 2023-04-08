@@ -17,11 +17,11 @@ export interface URLData {
 export interface Options {
   lastmod?: string;
   changefreq?: Changefreq;
-  priority: number;
+  priority?: number;
 }
 export class Sitemap {
   datas: Array<URLData>
-  baseURL? = string | URL;
+  baseURL? : string | URL;
   constructor(baseURL?) {
     this.datas = [];
     this.baseURL = baseURL;
