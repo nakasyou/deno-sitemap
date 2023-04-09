@@ -46,8 +46,8 @@ export class Sitemap {
       loc: url,
     };
     if ("lastmod" in options) data.lastmod = options.lastmod;
-    if ("changefreq" in options) data.lastmod = options.changefreq;
-    if ("priority" in options) data.lastmod = options.priority;
+    if ("changefreq" in options) data.changefreq = options.changefreq;
+    if ("priority" in options) data.priority = options.priority;
     this.datas.push(data);
   }
   get sitemap(): string{
